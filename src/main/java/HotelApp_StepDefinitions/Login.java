@@ -41,6 +41,7 @@ public class Login {
 
 		WebElement logout = driver.findElement(By.linkText("Logout"));
 		logout.click();
+		driver.quit();
 	}
 
 }

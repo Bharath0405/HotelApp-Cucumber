@@ -1,0 +1,47 @@
+package HotelApp_StepDefinitions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginExampls {
+	public static WebDriver driver;
+
+	@Given("^User is already on the HotelApp homepage$")
+	public void user_is_already_on_the_hotelapp_homepage() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Bharath\\Desktop\\Classes\\Browser_Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://adactin.com/HotelApp/");
+		driver.manage().window().maximize();
+	}
+
+	@When("^User enters the \"(.*)\" and \"(.*)\"$")
+	public void user_enters_the_username_and_password(String username, String password) {
+		driver.findElement(By.id("username")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
+
+	}
+
+	@When("^clicks and enter the app$")
+	public void clicks_and_enter_the_app() {
+		WebElement loginbtn = driver.findElement(By.xpath("//input[@type='Submit']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", loginbtn);
+	}
+
+	@Then("^Verify and close the browser$")
+	public void verify_and_close_the_browser() {
+
+		WebElement logout = driver.findElement(By.linkText("Logout"));
+		logout.click();
+		driver.quit();
+	}
+
+}

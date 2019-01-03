@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="C:\\Users\\Bharath\\workspace\\HotelApp_CucumberProject\\src\\main\\java\\HotelApp_Features\\LoginExamples.feature",
+		features= {"src/test/java/HotelBooking.feature"},
 		glue= {"HotelApp_StepDefinitions"},
-		format= {"pretty","html:test-output"}
-		//dryRun=true
+		format= {"pretty","html:test-output"},
+		monochrome=true
 		)
 
 

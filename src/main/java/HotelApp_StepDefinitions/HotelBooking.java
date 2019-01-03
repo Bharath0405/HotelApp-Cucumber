@@ -36,10 +36,10 @@ public class HotelBooking {
 		driver.quit();
 	}
 
-	@Given("^User is on hotel booking page$")
-	public void user_is_on_hotel_booking_page() {
-		driver.findElement(By.id("username")).sendKeys("bharathreddy");
-		driver.findElement(By.id("password")).sendKeys("testing1234");
+	@Given("^User is on hotel booking page with \"(.*)\" and \"(.*)\"$")
+	public void user_is_on_hotel_booking_page(String UserName, String Password) {
+		driver.findElement(By.id("username")).sendKeys(UserName);
+		driver.findElement(By.id("password")).sendKeys(Password);
 		driver.findElement(By.id("login")).click();
 
 	}

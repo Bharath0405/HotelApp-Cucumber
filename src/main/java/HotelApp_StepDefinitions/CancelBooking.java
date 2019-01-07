@@ -19,7 +19,7 @@ public class CancelBooking {
 
 	public static WebDriver driver;
 
-	@Before
+	/*@Before
 	public void setUp() {
 
 		System.setProperty("webdriver.chrome.driver",
@@ -33,8 +33,8 @@ public class CancelBooking {
 
 	@After
 	public void tearDown() {
-		//driver.quit();
-	}
+		// driver.quit();
+	}*/
 
 	@Given("^User enters the home page$")
 	public void user_enters_the_home_page() {
@@ -50,7 +50,7 @@ public class CancelBooking {
 
 	@When("^User serach for the Itinerary$")
 	public void user_serach_for_the_Itinerary() {
-		driver.findElement(By.id("order_id_text")).sendKeys("Z240O22S86");
+		driver.findElement(By.id("order_id_text")).sendKeys("GT99UAFGB3");
 		driver.findElement(By.id("search_hotel_id")).click();
 	}
 
@@ -61,10 +61,10 @@ public class CancelBooking {
 
 	@Then("^User clicks on cancel selected$")
 	public void user_clicks_on_cancel_selected() {
-		Wait_for("cancelall",10);
-		WebElement ele_id= driver.findElement(By.name("cancelall"));
+		Wait_for("cancelall", 10);
+		WebElement ele_id = driver.findElement(By.name("cancelall"));
 		ele_id.click();
-	
+
 		driver.switchTo().alert().accept();
 
 	}
@@ -74,12 +74,13 @@ public class CancelBooking {
 
 		driver.findElement(By.id("search_result_error")).getText().contains("The booking has been cancelled.");
 		driver.quit();
+
 	}
 
 	public static void Wait_for(String ele_id, int t) {
 		WebDriverWait wait = new WebDriverWait(driver, t);
 		wait.pollingEvery(1, TimeUnit.MILLISECONDS);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name(ele_id)));
-		
+
 	}
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="230.57615">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings" time="25.499864">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "MW137W2Q5M"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 2" time="60.026962">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "622LP53046"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 3" time="17.636825">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "5794J4W915"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 4" time="28.164521">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "952ETK9X48"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 5" time="32.760339">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "4316D4MKF8"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 6" time="66.487639">
+<system-out><![CDATA[Given User present on the home page.........................................passed
+When User gives "seleniumtesting" and "password1"...........................passed
+Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
+Then User searches for booking to be cancelled with "3F44CY7W16"............passed
+And select the relevant booking.............................................passed
+Then User clicks on Cancellation and confirms it............................passed
+]]></system-out>
+</testcase>
+</testsuite>

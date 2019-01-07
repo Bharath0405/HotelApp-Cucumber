@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		strict=true,
+		strict=false,
 		dryRun=false,
-		features= {"src/test/java/HotelBooking.feature"},
+		features= {"src/test/java/CancelBooking.feature"},
 		glue= {"HotelApp_StepDefinitions"},
 		format= {"pretty","html:test-output"},
 		monochrome=true

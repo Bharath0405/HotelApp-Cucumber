@@ -19,7 +19,7 @@ public class HotelBooking {
 
 	public static WebDriver driver;
 
-	@Before
+/*	@Before
 	public void setUp() {
 
 		System.setProperty("webdriver.chrome.driver",
@@ -34,7 +34,7 @@ public class HotelBooking {
 	@After
 	public void tearDown() {
 		driver.quit();
-	}
+	}*/
 
 	@Given("^User is on hotel booking page with \"(.*)\" and \"(.*)\"$")
 	public void user_is_on_hotel_booking_page(String UserName, String Password) {

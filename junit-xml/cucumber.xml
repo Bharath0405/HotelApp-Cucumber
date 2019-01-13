@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="230.57615">
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings" time="25.499864">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="79.251551">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings" time="16.173951">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
@@ -9,7 +9,7 @@ And select the relevant booking.............................................pass
 Then User clicks on Cancellation and confirms it............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 2" time="60.026962">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 2" time="12.882763">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
@@ -18,7 +18,7 @@ And select the relevant booking.............................................pass
 Then User clicks on Cancellation and confirms it............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 3" time="17.636825">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 3" time="12.573738">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
@@ -27,7 +27,7 @@ And select the relevant booking.............................................pass
 Then User clicks on Cancellation and confirms it............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 4" time="28.164521">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 4" time="12.402725">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
@@ -36,7 +36,7 @@ And select the relevant booking.............................................pass
 Then User clicks on Cancellation and confirms it............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 5" time="32.760339">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 5" time="13.025404">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
@@ -45,7 +45,7 @@ And select the relevant booking.............................................pass
 Then User clicks on Cancellation and confirms it............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 6" time="66.487639">
+<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 6" time="12.19297">
 <system-out><![CDATA[Given User present on the home page.........................................passed
 When User gives "seleniumtesting" and "password1"...........................passed
 Then On the HotelApp booking page user clicks on Booked Itinerary link......passed

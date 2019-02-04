@@ -1,36 +1,60 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/BulkCancellation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/HotelBooking.feature");
 formatter.feature({
-  "name": "HotelApp Bulk Cancellation",
+  "name": "HotelApp Booking Test",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Cancellation of Multiple Bookings",
+  "name": "Successful Booking Confirmation",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User present on the home page",
+  "name": "User is on hotel booking page with \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "User gives \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
+  "name": "Selects the hotel location",
   "keyword": "Then "
 });
 formatter.step({
-  "name": "User searches for booking to be cancelled with \"\u003cbookingID\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Selects Hotel",
   "keyword": "And "
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
+  "name": "Selects the type of room",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Chooses number of rooms",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "enters \"04/04/2019\" and \"05/05/2019\" dates",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Selects number of Audlts in a room",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "also mentions the number of children in a room",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "clicks on search button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Selects the available room",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User clicks on continue button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Enter billing details and click on book now",
   "keyword": "Then "
 });
 formatter.examples({
@@ -41,442 +65,283 @@ formatter.examples({
     {
       "cells": [
         "username",
-        "password",
-        "bookingID"
+        "password"
       ]
     },
     {
       "cells": [
         "seleniumtesting",
-        "password1",
-        "MW137W2Q5M"
+        "password1"
       ]
     },
     {
       "cells": [
-        "seleniumtesting",
-        "password1",
-        "622LP53046"
-      ]
-    },
-    {
-      "cells": [
-        "seleniumtesting",
-        "password1",
-        "5794J4W915"
-      ]
-    },
-    {
-      "cells": [
-        "seleniumtesting",
-        "password1",
-        "952ETK9X48"
-      ]
-    },
-    {
-      "cells": [
-        "seleniumtesting",
-        "password1",
-        "4316D4MKF8"
-      ]
-    },
-    {
-      "cells": [
-        "seleniumtesting",
-        "password1",
-        "3F44CY7W16"
+        "bharathreddy",
+        "testing1234"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
+  "name": "Successful Booking Confirmation",
   "description": "",
   "keyword": "Scenario Outline"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "User present on the home page",
+  "name": "User is on hotel booking page with \"seleniumtesting\" and \"password1\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
+  "location": "HotelBooking.user_is_on_hotel_booking_page(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
+  "name": "Selects the hotel location",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
+  "location": "HotelBooking.selects_the_hotel_location()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User searches for booking to be cancelled with \"MW137W2Q5M\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Selects Hotel",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.selects_Hotel()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
+  "name": "Selects the type of room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.selects_the_type_of_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Chooses number of rooms",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.chooses_number_of_rooms()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enters \"04/04/2019\" and \"05/05/2019\" dates",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.enters_and_dates(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Selects number of Audlts in a room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.selects_number_of_Audlts_in_a_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "also mentions the number of children in a room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.also_mentions_the_number_of_children_in_a_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on search button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
+  "location": "HotelBooking.clicks_on_search_button()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Selects the available room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.selects_the_available_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on continue button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HotelBooking.user_clicks_on_continue_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter billing details and click on book now",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HotelBooking.enter_billing_details_and_click_on_booknow()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
+  "name": "Successful Booking Confirmation",
   "description": "",
   "keyword": "Scenario Outline"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "User present on the home page",
+  "name": "User is on hotel booking page with \"bharathreddy\" and \"testing1234\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
+  "location": "HotelBooking.user_is_on_hotel_booking_page(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
+  "name": "Selects the hotel location",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
+  "location": "HotelBooking.selects_the_hotel_location()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User searches for booking to be cancelled with \"622LP53046\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Selects Hotel",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.selects_Hotel()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User present on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User searches for booking to be cancelled with \"5794J4W915\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Selects the type of room",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.selects_the_type_of_room()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User present on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User searches for booking to be cancelled with \"952ETK9X48\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Chooses number of rooms",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.chooses_number_of_rooms()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User present on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User searches for booking to be cancelled with \"4316D4MKF8\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "enters \"04/04/2019\" and \"05/05/2019\" dates",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.enters_and_dates(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Cancellation of Multiple Bookings",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User present on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BulkCancellation.user_present_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User gives \"seleniumtesting\" and \"password1\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BulkCancellation.user_gives_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "On the HotelApp booking page user clicks on Booked Itinerary link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.on_the_HotelApp_booking_page_user_clicks_on_Booked_Itinerary_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User searches for booking to be cancelled with \"3F44CY7W16\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BulkCancellation.user_searches_for_booking_to_be_cancelled_with(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select the relevant booking",
+  "name": "Selects number of Audlts in a room",
   "keyword": "And "
 });
 formatter.match({
-  "location": "BulkCancellation.select_the_relevant_booking()"
+  "location": "HotelBooking.selects_number_of_Audlts_in_a_room()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Cancellation and confirms it",
+  "name": "also mentions the number of children in a room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.also_mentions_the_number_of_children_in_a_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on search button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "BulkCancellation.user_clicks_on_Cancellation_and_confirms_it()"
+  "location": "HotelBooking.clicks_on_search_button()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Selects the available room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HotelBooking.selects_the_available_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on continue button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HotelBooking.user_clicks_on_continue_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter billing details and click on book now",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HotelBooking.enter_billing_details_and_click_on_booknow()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

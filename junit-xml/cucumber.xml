@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="79.251551">
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings" time="16.173951">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "MW137W2Q5M"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="42.578721">
+<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation" time="23.058618">
+<system-out><![CDATA[Given User is on hotel booking page with "seleniumtesting" and "password1"..passed
+Then Selects the hotel location.............................................passed
+And Selects Hotel...........................................................passed
+And Selects the type of room................................................passed
+And Chooses number of rooms.................................................passed
+And enters "04/04/2019" and "05/05/2019" dates..............................passed
+And Selects number of Audlts in a room......................................passed
+And also mentions the number of children in a room..........................passed
+Then clicks on search button................................................passed
+And Selects the available room..............................................passed
+Then User clicks on continue button.........................................passed
+Then Enter billing details and click on book now............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 2" time="12.882763">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "622LP53046"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
-]]></system-out>
-</testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 3" time="12.573738">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "5794J4W915"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
-]]></system-out>
-</testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 4" time="12.402725">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "952ETK9X48"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
-]]></system-out>
-</testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 5" time="13.025404">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "4316D4MKF8"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
-]]></system-out>
-</testcase>
-<testcase classname="HotelApp Bulk Cancellation" name="Cancellation of Multiple Bookings 6" time="12.19297">
-<system-out><![CDATA[Given User present on the home page.........................................passed
-When User gives "seleniumtesting" and "password1"...........................passed
-Then On the HotelApp booking page user clicks on Booked Itinerary link......passed
-Then User searches for booking to be cancelled with "3F44CY7W16"............passed
-And select the relevant booking.............................................passed
-Then User clicks on Cancellation and confirms it............................passed
+<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation 2" time="19.520103">
+<system-out><![CDATA[Given User is on hotel booking page with "bharathreddy" and "testing1234"...passed
+Then Selects the hotel location.............................................passed
+And Selects Hotel...........................................................passed
+And Selects the type of room................................................passed
+And Chooses number of rooms.................................................passed
+And enters "04/04/2019" and "05/05/2019" dates..............................passed
+And Selects number of Audlts in a room......................................passed
+And also mentions the number of children in a room..........................passed
+Then clicks on search button................................................passed
+And Selects the available room..............................................passed
+Then User clicks on continue button.........................................passed
+Then Enter billing details and click on book now............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

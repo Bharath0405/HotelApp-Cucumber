@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="42.578721">
-<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation" time="23.058618">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="57.119243">
+<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation" time="32.76916">
 <system-out><![CDATA[Given User is on hotel booking page with "seleniumtesting" and "password1"..passed
 Then Selects the hotel location.............................................passed
 And Selects Hotel...........................................................passed
@@ -15,7 +15,7 @@ Then User clicks on continue button.........................................pass
 Then Enter billing details and click on book now............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation 2" time="19.520103">
+<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation 2" time="24.350083">
 <system-out><![CDATA[Given User is on hotel booking page with "bharathreddy" and "testing1234"...passed
 Then Selects the hotel location.............................................passed
 And Selects Hotel...........................................................passed

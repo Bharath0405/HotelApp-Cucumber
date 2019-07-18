@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="57.119243">
-<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation" time="32.76916">
-<system-out><![CDATA[Given User is on hotel booking page with "seleniumtesting" and "password1"..passed
-Then Selects the hotel location.............................................passed
-And Selects Hotel...........................................................passed
-And Selects the type of room................................................passed
-And Chooses number of rooms.................................................passed
-And enters "04/04/2019" and "05/05/2019" dates..............................passed
-And Selects number of Audlts in a room......................................passed
-And also mentions the number of children in a room..........................passed
-Then clicks on search button................................................passed
-And Selects the available room..............................................passed
-Then User clicks on continue button.........................................passed
-Then Enter billing details and click on book now............................passed
-]]></system-out>
-</testcase>
-<testcase classname="HotelApp Booking Test" name="Successful Booking Confirmation 2" time="24.350083">
-<system-out><![CDATA[Given User is on hotel booking page with "bharathreddy" and "testing1234"...passed
-Then Selects the hotel location.............................................passed
-And Selects Hotel...........................................................passed
-And Selects the type of room................................................passed
-And Chooses number of rooms.................................................passed
-And enters "04/04/2019" and "05/05/2019" dates..............................passed
-And Selects number of Audlts in a room......................................passed
-And also mentions the number of children in a room..........................passed
-Then clicks on search button................................................passed
-And Selects the available room..............................................passed
-Then User clicks on continue button.........................................passed
-Then Enter billing details and click on book now............................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.231798">
+<testcase classname="HotelApp Application Testing" name="Successful login into HotelApp" time="31.231798">
+<system-out><![CDATA[Given User is on the HotelApp homepage......................................passed
+When User enters the username and password..................................passed
+And clicks on the login button..............................................passed
+Then Verify the login status................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		dryRun=false,
-		features= {"src/test/java/HotelBooking.feature"},
+		features= {"src/test/java/Login.feature"},
 		glue= {"HotelApp_StepDefinitions"},
 		format= {"pretty","html:test-output", "junit:junit-xml/cucumber.xml"},
 		monochrome=true,
